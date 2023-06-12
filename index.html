@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GOVAN MARKET AND CAR BOOT </title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/aa6428e09b.js" crossorigin="anonymous"></script>
+        <script src="fetchListings.js" defer></script>
+    </head>
+
+    <body>
+        <div id="nav">
+            <i class="fa-solid fa-store"></i>
+            <header id="maintitle"> <b> GOVAN MARKET AND CAR BOOT </b> </header>
+            <div class="rightnav">
+                <a href="addListing.html"> <i class="fa-solid fa-plus"></i> </a> 
+                <a href="newsletter.html"> <i class="fa-solid fa-newspaper"></i> </a>
+            </div>
+        </div>
+        <div id="subNav">
+            <div id="subNav-addListing">
+                <a href="addListing.html">
+                    <i class="fa-solid fa-plus"></i>  
+                    <p> Add Listing </p>
+                </a>
+            </div>
+            <div id="subNav-newsletter">
+                 <a href="newsletter.html">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <p> Download </p> 
+                </a>
+            </div>
+
+        </div>
+
+        <div id="main">
+            <div id="list">
+
+            </div> 
+
+            <div id="filters">
+                <div id="filters-searchBar">
+                    <input type="text">
+                    <button> Search </button>
+                </div>
+
+                <h1> Price Range </h1>
+                <div>
+                    <input type="radio">
+                    <p> > £10 </p>
+                </div>
+                <div>
+                    <input type="radio">
+                    <p> < £10 </p>
+                </div>
+                <div>
+                    <input type="radio">
+                    <p> Free </p>
+                </div>
+                <hr>
+
+                <h1> Item Quality </h1>
+                <div>
+                    <input type="radio">
+                    <p> Like New </p>
+                </div>
+                <div>
+                    <input type="radio">
+                    <p> Used </p>
+                </div>
+                <div>
+                    <input type="radio">
+                    <p> Heavily Used </p>
+                </div>
+                <hr>  
+                
+                <h1> Order By </h1>
+                <div>
+                    <input type="radio">
+                    <p> Price </p>
+                </div>
+                <div>
+                    <input type="radio">
+                    <p> Item Name </p>
+                </div>
+                <div>
+                    <input type="radio">
+                    <p> User Name </p>
+                </div>
+                <hr> 
+
+                <div id="fbDiv">
+                    <button id="filterButton"> Filter </button>
+                </div>
+
+            </div> 
+        </div>
+    </body>
+</html>

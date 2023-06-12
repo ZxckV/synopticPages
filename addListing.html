@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GOVAN MARKET AND CAR BOOT </title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/aa6428e09b.js" crossorigin="anonymous"></script>
+        <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+        <!-- <script defer src="addListing.js"></script> -->
+    </head>
+
+    <body>
+        <div id="nav">
+            <a href="index.html" class="backLink"> <i class="fa-solid fa-chevron-left"></i> </a>
+            <header id="maintitle"> <b> ADD LISTING </b> </header>
+        </div>
+
+        <div id="addListing-main">
+            <div id="formPara">
+                <p> The purpose of this site it to promote the distribution of electronic devices in 
+                    the area of Govan, while simultaniously aiming to reduce electronic waste. If you
+                    have any devices that you do not use, while also being in a useable condition, please
+                    consider listing them here. Also consider listing the item for free. It will be benefitting
+                    someone else greatly. </p>
+            </div>
+
+            <hr>
+
+            <form method="post" action="" id="form">
+                <div> 
+                    <label> Item Name </label>
+                    <input type="text" name="itemName" id="itemName" required>     
+                </div>
+                <div>
+                    <label> Price </label>
+                    <input type="number" id="price" name="price" placeholder="£" required>
+                    <label class="form-info"> *To list an item for free, set the price to 0 (Zero). </label>
+                </div>
+                <div>
+                    <label> Upload Image </label>
+                    <input type="file" accept="image/*">
+                </div>
+                <div>
+                    <label> Your Name </label>
+                    <input type="text" name="userName" id="userName" required>
+                </div>
+                <div>
+                    <label> Contact Number </label>
+                    <input type="tel" name="userContact" id="userContact" required>
+                </div>
+                <div>
+                    <button id="submitForm"> Submit </button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+
+            require(['fs'], function() {
+                console.log('Yes')
+            });
+
+        </script>
+    </body>
+</html>
