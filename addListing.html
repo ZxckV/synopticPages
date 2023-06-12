@@ -7,8 +7,9 @@
         <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 <!--         <script defer src="addListing.js"></script> -->
         <script>
-            var fs = require("fs");
-            console.log("Yes");
+            require(["fs"], function() {
+                console.log("Yes");        
+            });
         </script>
     </head>
 
